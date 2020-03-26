@@ -1,0 +1,782 @@
+word,len
+e0 t j,3
+e0 t,2
+e0 l,2
+e0 n,2
+e0 ʃ t,3
+e0 ɾ,2
+e0 f,2
+e0 s,2
+e0 dz,2
+e0 ts,2
+j o0,2
+j o0 n,3
+j u0,2
+j u0 ɡ,3
+j u0 ʃ,3
+j e0 p,3
+j e0,2
+j e0 ʃ t,4
+j e0 ʃ,3
+j e0 m,3
+j e0 m t,4
+j e0 t,3
+j a0,2
+j a0 m,3
+j a0 n,3
+j a0 p,3
+j a0 ʃ t,4
+j a0 z z,4
+j ua0 j,3
+j ua0,2
+ɲ e0,2
+ɲ e0 h,3
+ɲ i0,2
+ɲ o0 h,3
+ɲ a0,2
+p e0 ɾ,3
+p e0 n ɡ,4
+p e0,2
+p e0 s,3
+p e0 ʃ,3
+p e0 ʃ c,4
+p e0 ʃ k,4
+p a0 k,3
+p a0 t,3
+p a0 ɾ k,4
+p a0 ɾ,3
+p a0 h,3
+p s e0,3
+p ɾ a0,3
+p ɾ a0 ɡ,4
+p ɾ a0 p,4
+p ɾ a0 p ʃ t,6
+p ɾ a0 n k,5
+p ɾ a0 n k θ,6
+p ɾ a0 n,4
+p ɾ a0 n ɡ,5
+p ɾ a0 n t,5
+p ɾ i0 ɫ,4
+p ɾ i0 n ts,5
+p ɾ i0 n d,5
+p ɾ i0 f t,5
+p ɾ i0 t,4
+p ɾ i0 ʃ,4
+p ɾ o0 f,4
+p ɾ o0,3
+p ɾ e0 h,4
+p ɾ e0 t,4
+p ɾ e0,3
+p ɾ e0 k,4
+p ɾ e0 s,4
+p l o0 t,4
+p l a0 n,4
+p l a0 k,4
+p l u0 s,4
+p l u0 m,4
+p l u0 m b,5
+p l e0 c,4
+p o0 s,3
+p o0 s t,4
+p o0 ɾ t,4
+p o0 p,3
+p o0 l,3
+p ye0 t,3
+p ye0 s,3
+p i0,2
+p y0 ɫ,3
+p ə0,2
+p j e0 s,4
+m a0 ð,3
+m a0 j,3
+m a0 ɾ s,4
+m a0 ɾ,3
+m a0,2
+m a0 l,3
+m a0 r,3
+m a0 t,3
+m a0 ɫ,3
+m a0 n,3
+m a0 n ɡ,4
+m a0 dz,3
+m o0 s,3
+m o0 ɾ,3
+m o0 j,3
+m o0 t,3
+m e0 s,3
+m e0 r,3
+m e0 n d,4
+m e0 ɾ,3
+m j a0 f t,5
+m j e0 t,4
+m j e0 k,4
+m ua0 j,3
+m ua0 j ʃ,4
+m ua0 j t,4
+m ua0,2
+m ua0 ɾ,3
+m b a0 s,4
+m b a0 n,4
+m b a0 n k,5
+m b a0 n k θ,6
+m b a0 j t,5
+m b a0 j,4
+m b a0 ɾ,4
+m b a0 ɾ k,5
+m b a0 ɾ ð,5
+m b a0 ɾ t,5
+m b ɾ e0 t,5
+m b ɾ e0 z,5
+m b ɾ e0 ɡ,5
+m b ɾ o0 n,5
+m b ɾ o0 n t,6
+m b ɾ a0 p,5
+m b ɾ a0 p ʃ t,7
+m b y0 ɫ,4
+m b l e0 ð,5
+m b l e0,4
+m b l o0 ð,5
+m b l o0 ɡ,5
+m b u0 ʃ,4
+m b e0 t,4
+m i0,2
+m i0 k,3
+m i0 ʃ,3
+m i0 c,3
+m i0 t,3
+m i0 ɫ,3
+m i0 ɾ,3
+m i0 n,3
+m u0,2
+m u0 ɾ,3
+m u0 ɾ ɡ,4
+m ie0 ɫ,3
+m y0,2
+tʃ d o0,3
+tʃ k a0,3
+tʃ o0 n,3
+tʃ m i0 m,4
+tʃ m ua0 ɾ,4
+tʃ m u0 n d,5
+tʃ ua0 ɾ,3
+tʃ ua0 n,3
+tʃ ua0,2
+tʃ a0 s t,4
+tʃ a0 j,3
+tʃ a0 m,3
+tʃ t ə0,3
+tʃ ɾ a0 s t,5
+tʃ i0 f t,4
+t e0 k,3
+t e0 k s t,5
+t e0 k s,4
+t e0 j,3
+t e0 ɾ m,4
+t e0 l,3
+t u0,2
+t u0 ɾ k,4
+t u0 ɾ c,4
+t u0 ɾ p,4
+t u0 j,3
+t ɾ e0,3
+t ɾ e0 ɡ,4
+t ɾ e0 n d,5
+t ɾ e0 n,4
+t ɾ i0,3
+t ɾ i0 m,4
+t ɾ u0 p,4
+t ɾ u0,3
+t ɾ ua0 ɾ,4
+t ɾ ua0,3
+t ɾ ua0 ɫ,4
+t o0,2
+t o0 p,3
+t o0 n,3
+t o0 k,3
+t i0 m,3
+t i0 p,3
+t i0 ɫ,3
+t ua0 j,3
+t ua0,2
+t y0,2
+t y0 m,3
+t a0 ʃ,3
+t j u0,3
+t j a0,3
+t ə0 n d,4
+t ue0,2
+s o0 t,3
+s i0 tʃ,3
+s i0 ts,3
+s i0 c,3
+s i0 n,3
+s e0 ɾ b,4
+s e0 ɾ,3
+s e0 n d,4
+s e0 k s t,5
+s e0 k s,4
+s y0,2
+s j e0 ɫ,4
+s k a0,3
+s k a0 j,4
+s k a0 m,4
+s k a0 m p,5
+s k ɫ a0 v,5
+s p o0 ɾ t,5
+s p o0,3
+s u0 l m,4
+s u0,2
+s t i0 l,4
+s d o0,3
+s m u0 n d,5
+s m ə0,3
+s ɫ a0 v,4
+s f o0 n d,5
+s f o0 n,4
+o0,1
+o0 f,2
+o0 f f,3
+o0 h,2
+o0 n,2
+o0 ɾ ɡ,3
+o0 ɾ,2
+n a0,2
+n ə0 n,3
+n d a0 j,4
+n d a0,3
+n d a0 n,4
+n d a0 l,4
+n d ə0 ɾ,4
+n d o0 ð,4
+n d o0 c,4
+n d e0 ɾ,4
+n d e0 ʃ,4
+n d e0 z,4
+n d j e0 m,5
+n d j e0 m t,6
+n d j e0 k,5
+n d j e0,4
+n d j e0 n,5
+n d ie0 n,4
+n i0 s,3
+n i0,2
+n ɡ ɾ i0 t,5
+n ɡ ɾ i0,4
+n ɡ ɾ e0 k,5
+n ɡ ɾ e0,4
+n ɡ ɾ e0 c,5
+n e0 n,3
+n e0 ʃ,3
+n e0 t,3
+n dz j e0 r,5
+n dz i0 t,4
+n ɟ a0 n,4
+n ɟ a0 ɫ,4
+n ɟ i0 t,4
+n o0,2
+n o0 n,3
+v e0 n d,4
+v e0 t,3
+v e0 tʃ,3
+v e0 ʃ,3
+v e0,2
+v e0 ts,3
+v e0 c,3
+v j e0 t,4
+v j e0 n,4
+v j e0 tʃ,4
+v j e0 ts,4
+v i0 t,3
+v i0,2
+v i0 j,3
+v d i0 c,4
+v d e0 s,4
+v l e0 n,4
+v ɾ a0,3
+v ɾ e0 t,4
+v a0 ɾ ɡ,4
+v a0 n,3
+v a0 j,3
+v a0 r,3
+v o0 n,3
+v ə0,2
+v ə0 n d,4
+v u0,2
+v ua0 n,3
+v ie0,2
+ɾ e0,2
+ɾ e0 n d,4
+ɾ e0 n,3
+ɾ e0 f,3
+ɾ e0 θ,3
+ɾ i0,2
+ɾ i0 ɲ,3
+ɾ a0 s t,4
+ɾ a0,2
+ɾ a0 n k,4
+ɾ a0 n k θ,5
+ɾ a0 n,3
+ɾ a0 n ɡ,4
+ɾ a0 n t,4
+ɾ o0 l,3
+ɾ o0 ts k,4
+ɾ o0 b,3
+ɾ o0 m,3
+ɾ u0 s,3
+ɾ ua0 n,3
+f ʃ a0 t,4
+f ʃ e0 h,4
+f u0 n d,4
+f u0 t,3
+f a0 k t,4
+f a0 t,3
+f a0 n,3
+f a0 l,3
+f a0 j,3
+f a0,2
+f i0 l m,4
+f i0 ɫ,3
+f i0 s,3
+f i0 ɡ,3
+f i0,2
+f l e0 t,4
+f l e0,3
+f l a0 s,4
+f o0 ɾ t,4
+f o0 ɾ,3
+f o0 n d,4
+f o0 n,3
+f o0 l,3
+f e0,2
+f e0 r,3
+f t ua0 ɾ,4
+f t ua0 n,4
+f t ua0,3
+f t o0 n,4
+f ie0 ɾ,3
+f ɾ a0 n k,5
+f ɾ a0 n k θ,6
+f ɾ a0 n,4
+f ɾ a0 n ɡ,5
+f ɾ a0 n t,5
+f ɾ y0 t,4
+f ɾ o0 n,4
+f ɾ o0 n t,5
+f c i0 ɲ,4
+a0 s,2
+a0 c,2
+a0 t,2
+a0 ʃ t,3
+a0 l,2
+a0 n d,3
+a0 n ɡ,3
+a0 n,2
+a0 n k,3
+a0 n k θ,4
+a0 ɾ t,3
+a0 ɾ,2
+a0 k t,3
+a0 m,2
+a0 ts,2
+a0 h,2
+a0 b,2
+a0 d,2
+a0 j,2
+a0 ɫ,2
+ʃ k a0 k,4
+ʃ k a0,3
+ʃ k a0 s,4
+ʃ k ɾ ua0 ɾ,5
+ʃ k ɾ ua0 n,5
+ʃ k ɾ ua0 j,5
+ʃ k ɾ i0 m,5
+ʃ k ɾ ue0,4
+ʃ k u0 ɾ t,5
+ʃ k u0 ɾ θ,5
+ʃ k u0 ɾ s,5
+ʃ k o0 n,4
+ʃ k o0,3
+ʃ k o0 j,4
+ʃ k o0 p ʃ t,6
+ʃ k o0 p,4
+ʃ k o0 ʃ,4
+ʃ k ua0 ɾ,4
+ʃ k ua0 n,4
+ʃ k ə0 m b,5
+ʃ k e0 l,4
+ʃ k ue0,3
+ʃ p e0 ʃ,4
+ʃ p e0 ʃ c,5
+ʃ p e0 ʃ k,5
+ʃ p e0 j t,5
+ʃ p a0 ɫ,4
+ʃ p ɾ e0 h,5
+ʃ p ɾ e0 t,5
+ʃ p ɾ e0,4
+ʃ p ɾ e0 k,5
+ʃ p ɾ e0 s,5
+ʃ p i0 ɾ t,5
+ʃ p ie0,3
+ʃ e0 k,3
+ʃ e0 h,3
+ʃ e0 f,3
+ʃ e0 n,3
+ʃ e0 ʃ,3
+ʃ e0 ɲ t,4
+ʃ e0 j h,4
+ʃ ə0 n,3
+ʃ c i0 p,4
+ʃ c ua0 ɾ,4
+ʃ c ua0,3
+ʃ t ua0 ɾ,4
+ʃ t ua0 n,4
+ʃ t ua0,3
+ʃ t e0 t,4
+ʃ t e0 ɡ,4
+ʃ t y0 p,4
+ʃ t y0 n,4
+ʃ t o0 n,4
+ʃ t o0 j,4
+ʃ t ɾ ua0 ɾ,5
+ʃ t ɾ ua0,4
+ʃ t ɾ ua0 ɫ,5
+ʃ t ɾ a0 t,5
+ʃ t ɾ i0,4
+ʃ t ɾ i0 m,5
+ʃ t a0 t,4
+ʃ t i0 m,4
+ʃ u0 m,3
+ʃ i0 h,3
+ʃ i0,2
+ʃ i0 t,3
+ʃ f a0 c,4
+ʃ o0 k,3
+ʃ o0 h,3
+ʃ ua0 ɾ,3
+ʃ ua0,2
+ʃ a0 h,3
+ʃ m a0 n,4
+ʃ m a0 n ɡ,5
+b ə0,2
+b ə0 n,3
+b ə0 j,3
+b ə0 ʃ,3
+b ie0,2
+b ie0 n,3
+b e0,2
+b e0 j,3
+b e0 n,3
+b e0 n d,4
+b u0 ɾ ɡ,4
+b a0,2
+b a0 ɾ,3
+b a0 ɾ k,4
+b a0 ɾ ð,4
+b a0 ɾ t,4
+b a0 ɫ,3
+b a0 n,3
+b a0 n k,4
+b a0 n k θ,5
+b a0 ʃ,3
+b ɾ e0 t,4
+b ɾ e0 z,4
+b ɾ e0 ɡ,4
+b ɾ i0,3
+b i0 ɾ,3
+b i0 ʃ t,4
+b i0 n,3
+b i0 n d,4
+b i0 t,3
+b i0 j,3
+b l u0,3
+b l ue0 s,4
+b l ue0,3
+b l o0 ð,4
+b l o0 ɡ,4
+b l e0 ð,4
+b l e0,3
+b y0,2
+b o0 ɾ dʒ,4
+b o0 ʃ,3
+b o0 ɫ,3
+b ɫ o0 k,4
+ɟ ə0,2
+ɟ e0 ɾ,3
+ɟ e0 n,3
+ɟ e0 n d,4
+ɟ e0,2
+ɟ e0 t,3
+ɟ e0 j,3
+ɟ e0 ʃ,3
+ɟ a0 k,3
+ɟ a0 t,3
+ɟ a0,2
+ɟ i0 θ,3
+ɟ i0,2
+ɟ y0 c,3
+ɟ o0 k s,4
+θ a0,2
+θ e0,2
+θ e0 m,3
+θ e0 l b,4
+θ e0 k s t,5
+θ e0 k s,4
+θ j e0 ʃ t,5
+θ j e0 ʃ,4
+θ ua0 j,3
+θ ua0 ʃ,3
+θ ua0,2
+θ ye0 ɾ,3
+θ ye0 n,3
+θ ye0,2
+θ o0 t,3
+θ i0 r,3
+θ u0 m b,4
+k a0 m,3
+k a0 m p,4
+k a0 c,3
+k a0 n,3
+k a0 h,3
+k a0 p,3
+k u0 ʃ,3
+k u0 ʃ t,4
+k u0 c,3
+k u0 j t,4
+k u0 r,3
+k u0 ɾ t,4
+k u0 ɾ θ,4
+k u0 ɾ s,4
+k u0 l t,4
+k u0 l m,4
+k u0 b,3
+k ɾ ye0,3
+k ɾ ye0 ɾ,4
+k ɾ ye0 n,4
+k ɾ ye0 t,4
+k ɾ e0 j t,5
+k ɾ a0 h,4
+k ɾ i0 m,4
+k ɾ y0 c,4
+k e0,2
+k e0 c,3
+k e0 ʃ,3
+k e0 m,3
+k e0 t,3
+k θ ye0,3
+k θ ye0 ɾ,4
+k θ ye0 n,4
+k θ e0 n,4
+k θ e0 j,4
+k θ i0 m,4
+k i0 ʃ,3
+k i0,2
+k l u0 b,4
+k l a0 n,4
+k o0 t,3
+k o0 m b,4
+k o0 d,3
+k o0 p ʃ t,5
+k o0 p,3
+k o0 ɾ,3
+k y0 tʃ,3
+k ə0 n d,4
+k ə0,2
+k ə0 t,3
+k ua0 j,3
+k ua0 j t,4
+k t a0,3
+k t o0,3
+ð a0,2
+ð e0 m b,4
+ð e0 n,3
+ð i0,2
+z i0,2
+z ə0,2
+z ɟ o0 ð,4
+z ɟ ua0 ɾ,4
+z ɟ a0 t,4
+z ɟ e0 ð,4
+z ɟ i0 ð,4
+z o0 t,3
+z o0 ɡ,3
+z o0 ɟ,3
+z j a0 r,4
+z b ɾ e0 t,5
+z b ɾ e0 z,5
+z b ɾ e0 ɡ,5
+z u0,2
+z e0,2
+z e0 ɫ,3
+d ɾ e0 j t,5
+d ɾ u0,3
+d e0,2
+d e0 l,3
+d e0 t,3
+d e0 ɾ,3
+d e0 ʃ,3
+d e0 s,3
+d e0 m,3
+d e0 n,3
+d i0,2
+d i0 s k,4
+d i0 n,3
+d i0 t,3
+d i0 ʃ,3
+d i0 j,3
+d ua0 ɾ t,4
+d ua0 ɾ,3
+d ua0,2
+d ua0 n,3
+d ua0 m,3
+d ua0 ʃ,3
+d o0 t,3
+d o0 n,3
+d o0 m,3
+d o0 ɟ,3
+d j e0 m,4
+d j e0 m t,5
+d j e0 k,4
+d j e0,3
+d j e0 n,4
+d ie0,2
+d ie0 ɫ,3
+d ie0 l,3
+d ə0 m,3
+d u0 k,3
+d u0,2
+d a0,2
+d a0 l,3
+d a0 s,3
+d ye0 ɾ t,4
+d ye0 ɾ,3
+d ue0,2
+d y0 ʃ,3
+l a0,2
+l a0 ɾ ɡ,4
+l a0 ɾ t,4
+l a0 t,3
+l a0 j m,4
+l a0 n,3
+l e0,2
+l e0 k,3
+l e0 ʃ,3
+l e0 n,3
+l i0 n d,4
+l i0 ɟ,3
+l i0 ð,3
+l i0,2
+l i0 ɡ,3
+l i0 s,3
+l ua0 n,3
+l ua0 j,3
+l ua0 j t,4
+l ə0,2
+l ə0 n ɡ,4
+l o0 s,3
+l o0 t,3
+l u0 m,3
+l u0 m b,4
+l u0 t,3
+ɫ o0 j,3
+ɡ u0 ʃ t,4
+ɡ u0 ɾ,3
+ɡ ɾ u0 p,4
+ɡ ɾ u0 ʃ t,5
+ɡ ɾ e0 k,4
+ɡ ɾ e0,3
+ɡ ɾ e0 c,4
+ɡ ɾ ua0,3
+ɡ ɾ ua0 n,4
+ɡ ɾ ua0 s,4
+ɡ ɾ a0,3
+ɡ ɾ a0 m,4
+ɡ ɾ a0 n k,5
+ɡ ɾ a0 n k θ,6
+ɡ ɾ a0 n,4
+ɡ ɾ a0 n ɡ,5
+ɡ ɾ a0 n t,5
+ɡ ɾ i0 t,4
+ɡ ɾ i0,3
+ɡ a0 z,3
+ɡ o0 l,3
+h ua0 j,3
+h ua0 j t,4
+h ua0,2
+h a0 p,3
+h a0,2
+h a0 n,3
+h a0 ɾ k,4
+h a0 ɾ d,4
+h a0 ɫ,3
+h a0 ʃ,3
+h a0 s,3
+h y0 n,3
+h e0 ð,3
+h e0 c,3
+h e0 ɾ,3
+h i0 ɾ,3
+h i0,2
+h i0 t,3
+h i0 m n,4
+h i0 p,3
+h u0 m b,4
+h o0 ð,3
+h o0 c,3
+h o0 s t,4
+h o0 v,3
+i0 ʃ,2
+i0 m,2
+i0 b n,3
+i0 n,2
+i0 v,2
+i0 t,2
+i0 l,2
+i0 s,2
+i0 k,2
+c y0 ʃ,3
+c i0 n d,4
+c i0,2
+c ie0 ɫ,3
+c ie0 j t,4
+c ie0 j,3
+c ua0 j t,4
+c ua0 n,3
+c e0 n,3
+c e0 j f,4
+c e0 ʃ,3
+c a0 ɾ k,4
+c a0 n,3
+c k a0,3
+ua0,1
+r j e0 ð,4
+r j e0 t,4
+r i0 t,3
+r i0,2
+r e0 ʃ t,4
+r o0 k,3
+r u0 ʃ,3
+r a0 f ʃ,4
+ts a0,2
+ts a0 t,3
+ts a0 ɾ,3
+ts d o0,3
+ts o0 m,3
+ts o0 n,3
+ts k a0,3
+ts e0 p,3
+ts h e0,3
+ə0,1
+ə0 s,2
+ə0 n,2
+ə0 ʃ t,3
+y0 t,2
+y0 ɫ,2
+y0,1
+u0 l,2
+u0 n d,3
+u0 n,2
+u0 p,2
+ʒ d u0 k,4
+dʒ a0,2
+ue0,1
+ue0 b,2

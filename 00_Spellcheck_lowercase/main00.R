@@ -6,7 +6,6 @@ library(tm)
 
 args = commandArgs(trailingOnly = TRUE)
 
-#setwd('~/Dropbox (Brown)/CrossLing_Crubadan/')
 #args <- c('chr', 'Crubadan/chr.txt.bz2', 'Crubadan/filtered/chr.txt.filtered.bz2')
 
 # part 0: sys and input ####
@@ -18,8 +17,6 @@ if (length(args) != 3){
   input_filename <- args[2]
   output_filename <- args[3]
 #  output_filename <- paste0('Crubadan/filtered/', args[3])
-#  word_file <- paste0('OpenSubtitles2018/', LanCode, '.word.filtered.count.csv')
-#  word_output_file <- paste0('OpenSubtitles2018/', LanCode, '.word.lowercase.count.csv')
 }
 print(paste('the current language is', LanCode))
 print(paste('input from', input_filename))
