@@ -1,3 +1,5 @@
 # Ignore .Rhistory files
 *.Rhistory
 multi/
+ignore/
+*.DS_Store
