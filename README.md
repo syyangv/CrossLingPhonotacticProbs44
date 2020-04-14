@@ -14,7 +14,7 @@ Folders with numbers in the beginning of the title contain scripts for each step
 
 Other folders contain products or byproducts from each step. For detailed descriptions and the input and output of each step, check comments in the scripts.
 
-\#Crubadan: Wordlists with wordform and frequency information from the original corpus. Spellchecked wordlists are under "filtered/".  Only one language (Turkish) is listed as an example of word lists used for processing. The same language is used for demonstration purposes in "Example_for_processing_one_language.ipynb" and "run_all_mono_di.sh" as well as "run_all_multi.sh"
+\#Crubadan: Wordlists with wordform and frequency information from the original corpus. Spellchecked wordlists are under "filtered/".  Only one language (Turkish) is listed as an example of word lists used for processing. The same language is used for demonstration purposes in "run_all_mono_di.sh" and *ipynb* files.
 
 \#Crubadan_translate: Wordlists for all 78 languages after translation (output from step 01).
 
