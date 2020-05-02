@@ -29,13 +29,13 @@ def main():
 
 
     # 0. check the number of samples in the directory
-    print('current samples: ' + str(len([name for name in os.listdir('samples/mono_di/' + LanCode)])))
-    if len([name for name in os.listdir('samples/mono_di/' + LanCode)]) >= sample_num:
+    print('current samples: ' + str(len([name for name in os.listdir('samples/' + LanCode)])))
+    if len([name for name in os.listdir('samples/' + LanCode)]) >= sample_num:
         exit()
 
     # 1. import language models and sizes for each syllable length
     ## 1.1 get language model
-    lm_dict_path = 'language_models/mono_di/' + LanCode + '.LM.bysyl'
+    lm_dict_path = 'language_models/' + LanCode + '.LM.bysyl.bz2'
     with bz2.open(lm_dict_path) as dbfile:
         #lm_dict = yaml.load(dbfile)
         lm_dict = yaml.unsafe_load(dbfile)
@@ -61,7 +61,7 @@ def main():
 
     # write real lexicon to csv given the boolean
     if write_real_probs:
-        real_lexicon_writename = ('samples/mono_di/'
+        real_lexicon_writename = ('samples/'
             + LanCode
             + '.'
             + 'real.lex.bz2'
@@ -96,7 +96,7 @@ def main():
     len_usable_df.columns = ['syllen', 'seglen', 'count']
 
     if write_real_probs:
-        len_usable_df_writename = ('samples/mono_di/'
+        len_usable_df_writename = ('samples/'
             + LanCode
             + '.lengths.df.csv'
             )
@@ -141,11 +141,11 @@ def main():
 
     # 3. one sample lexicon
     ## 3.1 check the number of samples in the directory again
-    while len([name for name in os.listdir('samples/mono_di/' + LanCode)]) < sample_num:
+    while len([name for name in os.listdir('samples/' + LanCode)]) < sample_num:
         new_sample = sampling_from_enum_with_dirichlet_lm(enum_bysyl, df_counts_bysyl, len_usable_df, lm_dict)
         now = datetime.now()
     # 4. write the sampled lexicon to csv with timestamp
-        sample_writename = ('samples/mono_di/' + 
+        sample_writename = ('samples/' + 
             LanCode + '/'
             + 'sample.'
             + str(now.month) + str(now.day) + '_' 

@@ -23,16 +23,16 @@ def main():
     script, LanCode = sys.argv
 
     sample_lexicons = pd.DataFrame()
-    for i, name in enumerate(os.listdir('samples/mono_di/' + LanCode)):
+    for i, name in enumerate(os.listdir('samples/' + LanCode)):
         sample_i = i + 1
-        with bz2.open('samples/mono_di/'+LanCode+'/'+name, "rb") as f:
+        with bz2.open('samples/'+LanCode+'/'+name, "rb") as f:
             new_sample = pd.read_csv(f)
         new_sample['SampleNo'] = sample_i
         sample_lexicons = pd.DataFrame.append(sample_lexicons, new_sample)
 
-    sample_num = len([name for name in os.listdir('samples/mono_di/' + LanCode)])
+    sample_num = len([name for name in os.listdir('samples/' + LanCode)])
 
-    samples_writename = ('samples/mono_di/'
+    samples_writename = ('samples/'
         + LanCode
         + '.'
         + str(sample_num)

@@ -49,7 +49,7 @@ def main():
     script, LanCode, n_phones, n_vowels, num_rounds = sys.argv
 
     words_path = ("mono_di_5000/" + LanCode + ".mono.di.5000")
-    db_path = ("language_models/mono_di/" + LanCode + ".LM.bysyl")
+    db_path = ("language_models/" + LanCode + ".LM.bysyl.bz2")
     print(words_path)
 
     n_phones = int(n_phones)

@@ -5,13 +5,7 @@ options(stringsAsFactors = F)
 
 args = commandArgs(trailingOnly = TRUE)
 
-#args = c('el', '100', '4')
-
 source('05_Plotting/plotting_functions.R')
-dir.create(file.path('plots_bit/mono_di/'))
-dir.create(file.path('plots_bit/mono_di/PerSyl/'))
-dir.create(file.path('plots_bit/mono_di/PerSegPerSyl/'))
-
 
 # part 0: sys and input ####
 if (length(args) != 3){
@@ -33,18 +27,15 @@ if (length(args) != 3){
     option_stat <- TRUE
   }
 
-  samples_name <- paste0('samples/mono_di/', LanCode, '.', sample_num, '.samples.bySyl.bz2')
-  real_lex_name <- paste0('samples/mono_di/', LanCode, '.real.lex.bz2')
-  len_df_name <- paste0('samples/mono_di/', LanCode, '.lengths.df.csv')
-  plot_writename_CompleteLexicon <- paste0('plots_bit/mono_di/', LanCode, '.', sample_num, '.CompleteLexicon.pdf')
-  plot_writename_PerSyl <- paste0('plots_bit/mono_di/PerSyl/', LanCode, '.', sample_num, '.PerSyl.pdf')
-  plot_writename_PerSegPerSyl <- paste0('plots_bit/mono_di/PerSegPerSyl/', LanCode, '.', sample_num, '.PerSegPerSyl.pdf')
-  plot_writename_CompleteLexicon_excludeConstantSeg <- paste0('plots_bit/mono_di/', LanCode, '.', sample_num, '.CompleteLexicon_excludeConstantSeg.pdf')
-  plot_writename_PerSyl_excludeConstantSeg <- paste0('plots_bit/mono_di/PerSyl/', LanCode, '.', sample_num, '.PerSyl_excludeConstantSeg.pdf')
-  plot_writename_PerSegPerSyl_excludeConstantSeg <- paste0('plots_bit/mono_di/PerSegPerSyl/', LanCode, '.', sample_num, '.PerSegPerSyl_excludeConstantSeg.pdf')
+  samples_name <- paste0('samples/', LanCode, '.', sample_num, '.samples.bySyl.bz2')
+  real_lex_name <- paste0('samples/', LanCode, '.real.lex.bz2')
+  len_df_name <- paste0('samples/', LanCode, '.lengths.df.csv')
+  plot_writename_CompleteLexicon <- paste0('plots_bit/', LanCode, '.', sample_num, '.CompleteLexicon.pdf')
   cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 }
 print(paste('the current language is', LanCode, '\n'))
+# get language names that correspond to language codes ----
+## Language names that cannot be acquired directly with ISOcodes
 lancode_vec <- c('ca', 'el', 'ht', 'ky', 'si', 'ug')
 lang_name_vec <- c('Catalan', 'Greek', 'Haitian Creole', 'Kyrgyz', 'Sinhala', 'Uyghur')
 
@@ -92,45 +83,5 @@ p_complete <- plot_CompleteLexicon(samples, real_lex, current_lang)
 ggsave(plot_writename_CompleteLexicon, plot=p_complete)
 #cairo_pdf(plot_writename_CompleteLexicon)
 #print(p_complete)
-#dev.off()
-
-p_complete_exclude <- plot_CompleteLexicon(samples_excludeConstantSeg,
-                                           real_lex_excludeConstantSeg,
-                                           current_lang)
-#p_complete_exclude
-ggsave(plot_writename_CompleteLexicon_excludeConstantSeg, plot=p_complete_exclude)
-#cairo_pdf(plot_writename_CompleteLexicon_excludeConstantSeg)
-#print(p_complete_exclude)
-#dev.off()
-
-p_PerSyl <- plot_PerSyl(samples, real_lex, current_lang,
-                        len_usable_df, filter_count = 50)
-#p_PerSyl
-ggsave(plot_writename_PerSyl, plot = p_PerSyl)
-#cairo_pdf(plot_writename_PerSyl)
-#print(p_PerSyl)
-#dev.off()
-
-p_PerSyl_exclude <- plot_PerSyl(samples_excludeConstantSeg, real_lex_excludeConstantSeg,
-                                current_lang, len_usable_df_excludeConstantSet, filter_count = 50)
-#p_PerSyl_exclude
-ggsave(plot_writename_PerSyl_excludeConstantSeg, plot = p_PerSyl_exclude)
-#cairo_pdf(plot_writename_PerSyl_excludeConstantSeg)
-#print(p_PerSyl_exclude)
-#dev.off()
-
-p_PerSylPerSeg <- plot_PerSegPerSyl(samples, real_lex, current_lang, len_usable_df)
-#p_PerSylPerSeg
-ggsave(plot_writename_PerSegPerSyl, plot = p_PerSylPerSeg)
-#cairo_pdf(plot_writename_PerSegPerSyl)
-#print(p_PerSylPerSeg)
-#dev.off()
-
-p_PerSylPerSeg_exclude <- plot_PerSegPerSyl(samples_excludeConstantSeg, real_lex_excludeConstantSeg,
-                                            current_lang, len_usable_df_excludeConstantSet)
-#p_PerSylPerSeg_exclude
-ggsave(plot_writename_PerSegPerSyl_excludeConstantSeg, plot = p_PerSylPerSeg_exclude)
-#cairo_pdf(plot_writename_PerSegPerSyl_excludeConstantSeg)
-#print(p_PerSylPerSeg_exclude)
 #dev.off()
 
