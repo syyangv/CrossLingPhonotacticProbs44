@@ -1,0 +1,188 @@
+---
+title: "Naro"
+author: "Bill Mizgerd"
+bibliography: nhr.bib
+output: html_document
+---
+
+Last Updated: 2019-07-02
+
+# Background
+
+**Language Family**: Khoe-Kwadi / Khoe / Kalahari Khoe / Southwest / Naro
+
+Also spelled Nharo and Naron in some sources.
+
+# Phonology
+
+## Consonants (Pulmonic)
+
+* /p/ is very rare in native words, so much so that @NhrKagaya1978 argues that it only appears in loans. [@NhrKagaya1978, p. 34] [@NhrVisser1998, p. 119]
+* Alveolar affricates and fricatives are produced in free variation with their postalveolar counterparts. [@NhrKagaya1978, pp. 36-37]
+* Loanwords also include /f/ and /l/. [@NhrVisser1998, p. 120]
+* /x/ and /h/ only contrast word-initially. [@NhrKagaya1978, p. 37]
+* /m/ is the only consonant that can occur root-finally. [@NhrVisser1998, p. 123]
+* @NhrKagaya1978 diverges from Visser's analysis (which I have followed) in several places:
+  * He also finds /s/ to be an allophone of /ʃ/.
+  * He identifies the aspirated stops (as well as /t'/) as allophones of the plain voiceless stops. (Largely based on frequency, per @NhrKagaya1978 pp. 35-36, although he does find /tʰ/ and /t/ to exist in complementary distribution.)
+  * He does not see the velar-released stops as occurring phonemically.
+  * He identifies /h/ as an allophone of /x/.
+  * He sees syllabic nasals for /m/, /n/, and /ŋ/ as existing contrastively. [@NhrKagaya1978, p. 39]
+  * (All aforementioned bullet points on @NhrKagaya1978, p. 34, except where mentioned)
+* The position of /w/ and /j/ is unclear; they only occur intervocalically, so their realization may be just an epenthetic process rather than the production of a distinct phoneme. [@NhrKagaya1978, pp. 37-38]
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
+library(dplyr)
+library(knitr)
+library(kableExtra)
+consonants <- read.table(textConnection('
+"Manner of Articulation"            Labial     Alveolar         Palatal    Velar       Glottal
+"Stops (normal release)"            "p pʰ b"   "t tʰ tʼ d"      ""         "k kʰ ɡ"    ""
+"Stops (velar fric. release)"       ""         "tx"             ""         "kx kxʼ"    ""
+"Affricates (normal release)"       ""         "ts tsʰ tsʼ dz"  ""         ""          ""
+"Affricates (velar fric. release)"  ""         "tsx"            ""         ""          ""
+Fricatives                          ""         "s"              ""         "x"         "h"
+Nasals                              "m"        "n"              ""         ""          ""
+Flaps                               ""         "ɾ"              ""         ""          ""
+Approximants                        "w"        ""               "j"        ""          ""
+'), header = TRUE)
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote("Note: From left to right, phonemes in a cell are plain, aspirated, ejective, and voiced", general_title = "")
+```
+
+## Clicks
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
+library(dplyr)
+library(knitr)
+library(kableExtra)
+consonants <- read.table(textConnection('
+"Manner of Release"     Dental     Alveolar     Palatal    Lateral
+"Voiceless"             "ǀ"        "ǃ"          "ǂ"        "ǁ"
+"Voiced"                "ᶢǀ"       "ᶢǃ"         "ᶢǂ"       "ᶢǁ"
+"Prenasalized"          "ⁿǀ"       "ⁿǃ"         "ⁿǂ"       "ⁿǁ"
+"Ejective"              "ǀʼ"       "ǃʼ"         "ǂʼ"       "ǁʼ"
+"Aspirated"             "ǀʰ"       "ǃʰ"         "ǂʰ"       "ǁʰ"
+"Fricative"             "ǀx"       "ǃx"         "ǂx"       "ǁx"
+"Eject. Fric."          "ǀxʼ"      "ǃxʼ"        "ǂxʼ"      "ǁxʼ"
+'), header = TRUE)
+kable(consonants, col.names = c("Manner of Release", "Dental", "Alveolar", "Palatal", "Lateral"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4))
+```
+
+Clicks only occur root-initially. Each click has seven types of release: voiceless, voiced, prenasalized, ejective, aspirated, released into a fricative, and released into an ejective fricative. [@NhrVisser1998, p. 121]
+
+@NhrKagaya1978 classes the types of releases as voiceless, voiced, prenasalized, ejective, aspirated, and glottalized (p. 41); he excludes the fricative-released clicks due to not finding minimal pairs between them and the aspirated clicks (p. 44). As for the ejective-fricative clicks, Kagaya argues that they could be allophones of either the ejective or the aspirated clicks. (p. 46)
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front    Central   Back
+High   "i"      ""        "u"
+Mid    "e"      ""        "o oˤ"
+Low    ""       "a aˤ"    ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote("Note: Phonemes on the left of each cell are plain, whereas phonemes on the right of each cell are pharyngealized", general_title = "")
+```
+
+Vowel length is contrastive [@NhrKagaya1978, p. 31]; however, to better reflect the various suprasegmental features of Naro vowels, I will be following the patterns of the authors I have referenced by representing long vowels as sequences of consecutive vowels rather than by using the ː symbol.
+
+Vowel nasalization is also contrastive. Although my sources have argued that any vowel can be nasalized, nasalized high vowels are not attested in the Crubadan corpus, so I have excluded them from my ruleset.
+
+Only the first vowel in a Naro word can be pharyngealized. [@NhrVisser1998, p. 124]
+
+### Tone
+
+Tone is carried on vowels, as well as on syllabic /m/. Naro has three tones: high, mid, and low. Orthographically, high tones are marked with an acute accent, while low tones are marked with a grave accent. Mid tones are unmarked. [@NhrVisser1998, p. 132]
+
+Voiced consonants tend to lower the tone of following vowels, while ejectives tend to raise it. [@NhrVisser1998, p. 133]
+
+# Alphabet
+
+a - /a/  
+  a̱ - /aˤ/  
+b - /b/  
+c - /ǀ/  
+  cg - /ǀx/  
+  cg' - /ǀxʼ/  
+  ch - /ǀʰ/  
+  c' - /ǀʼ/  
+  dc - /ᶢǀ/  
+  nc - /ⁿǀ/  
+d - /d/  
+e - /e/  
+f - /f/ (rare)  
+g - /x/  
+gh - /ɡ/  
+h - /h/  
+i - /i/  
+k - /k/  
+  kg - /kx/  
+  kg' - /kxʼ/  
+  kh - /kʰ/  
+m - /m/  
+n - /n/  
+o - /o/  
+  o̱ - /oˤ/  
+p - /p/  
+  ph - /pʰ/  
+q - /ǃ/  
+  qg - /ǃx/  
+  qg' - /ǃxʼ/  
+  qh - /ǃʰ/  
+  q' - /ǃʼ/  
+  dq - /ᶢǃ/  
+  nq - /ⁿǃ/  
+r - /ɾ/  
+s - /s/  
+t - /t/  
+  tg - /tx/  
+  th - /tʰ/  
+tc - /ǂ/  
+  tcg - /ǂx/  
+  tcg' - /ǂxʼ/  
+  tch - /ǂʰ/  
+  tc' - /ǂʼ/  
+  dtc - /ᶢǂ/  
+  ntc - /ⁿǂ/  
+ts - /ts/  
+  tsh - /tsʰ/  
+u - /u/  
+w - /w/ (rare)  
+x - /ǁ/  
+  xg - /ǁx/  
+  xg' - /ǁxʼ/  
+  xh - /ǁʰ/  
+  x' - /ǁʼ/  
+  dx - /ᶢǁ/  
+  nx - /ⁿǁ/  
+y - /j/  
+z - /dz/  
+
+Vowel with acute accent - high-tone vowel  
+Vowel with grave accent - low-tone vowel  
+Vowel with tilde - nasalized vowel  
+
+# Lenition Rules
+
+* Some speakers spirantize /dz/ to [z]. [@NhrVisser1998, p. 120]
+* /d/ becomes [ɾ] root-medially. [@NhrVisser1998, p. 122]
+  * @NhrKagaya1978 observes the same process, but argues that it's a phonemic /ɾ/ that only occurs intervocalically. (p. 37)
+* The contrasts between /i e/ and /u o/ collapse when the vowels are nasalized. [@NhrVisser1998, p. 124]
+* In words that begin with a labial or alveolar consonant and have a front vowel in the second syllable, /a/ in the first syllable tends to raise. [@NhrVisser1998, p. 128]
+  * This consequently collapses the vowel sequences /ai/ and /ae/ to [ii] and [ee] respectively. (ibid.)
+* Intervocalic /b/ spirantizes to [β]. [@NhrKagaya1978, p. 34]
+
+# Misc. Rules
+
+* Some interrogative words feature word-initial syllabic /n/. [@NhrVisser1998, p. 123]
+
+# References

@@ -1,0 +1,41 @@
+# Tagalog
+# Written by Abi Creighton
+# Updated 17 Sept. 2019
+# Edited by Shiying Yang
+# Edited 13 May 2019
+# Edited by Emily Strand
+# Edited 7 Oct. 2019
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,[abkeghilmopsuw],,,,
+class,glottal,[ꞌ'ˈ‘’-],,,,
+class,vowel,[aeiou],,,,
+class,y-preceder,[eaou],,,,
+class,w-preceder,[ia],,,,
+# Individual Letters
+sub,d,d̪,2,,,
+sub,n,n̪,2,,,
+sub,r,ɾ,2,,,
+sub,t,t̪,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+sub,{glottal},ʔ,2,,,
+sub,({vowel}),ʔ \1,2,^,,
+# Digraphs
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,
+# Diphthongs
+sub,e,ej,2,,y,
+sub,a,aj,2,,y,
+sub,o,oj,2,,y,
+sub,u,uj,2,,y,
+sub,y,,3,{y-preceder},,
+sub,i,iw,2,,w,
+sub,a,aw,2,,w,
+sub,w,,3,{w-preceder},,
+# Non-Diphthongs
+ipasub,ej ({vowel}),e j \1,3,,,
+ipasub,aj ({vowel}),a j \1,3,,,
+ipasub,oj ({vowel}),o j \1,3,,,
+ipasub,uj ({vowel}),u j \1,3,,,
+ipasub,iw ({vowel}),i w \1,3,,,
+ipasub,aw ({vowel}),a w \1,3,,,

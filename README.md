@@ -1,7 +1,7 @@
 # CrossLingPhonotacticProbs78
 
 # About
-Data and scripts from Yang, Strand and Cohen Priva, `TODO title`.
+Data and scripts from Yang, S. and Cohen Priva, U. Too Much Information: How the Structure of the Lexicon Avoids Information Overload. (under revision)
 
 # Description
 Word lists of words and frequencies for each language are from [the Crúbadán Corpus](http://crubadan.org/). 
@@ -19,7 +19,7 @@ Other folders contain products or byproducts from each step. For detailed descri
 - *Crubadan_translate*: Wordlists for all 78 languages after translation. These wordlists are processed and transformed from wordform and frequency data from [the Crúbadán Corpus](http://crubadan.org/). We are displaying them here as approved by the original corpu's [license](http://creativecommons.org/licenses/by/4.0/).
     - Scannell, K. P. 2007. “The Crúbadán Project: Corpus Building for Under­-Resourced Lan­guages.” In *Building and Exploring Web Corpora: Proceedings of the 3rd Web as Corpus Workshop*, 4:5–15.
 
-- *mono_di_5000*: Core lexicons for all 22 languages (output from step 02) used in our study.
+- *mono_di_5000*: Core lexicons for all 21 languages (output from step 02) used in our study.
 
 - *language_models*: Accumulated counts of every transition in the training lexicon for each language. Each file is a Python dictionary written to YAML format.
 

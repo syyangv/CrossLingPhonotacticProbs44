@@ -1,0 +1,159 @@
+---
+title: "Maltese"
+author: "Bill Mizgerd"
+bibliography: mt.bib
+output: html_document
+---
+
+Last Updated: 2018-10-21
+
+# Background
+
+**Language Family**: Afro-Asiatic / Semitic / Central Semitic / Arabic / Western Arabic / Maltese
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Dental   Alveolar    Postalveolar   Palatal     Velar     Pharyngeal     Glottal
+Stops                      "p  b"     "t̪  d̪"      ""           ""           ""       "k  ɡ"         ""           "ʔ"
+Affricates                   ""        ""      "ts  dz"     "tʃ  dʒ"        ""         ""           ""           ""
+Fricatives                 "f  v"      ""       "s  z"       "ʃ  ʒ"         ""         ""           "ħ"          ""
+Nasals                       "m"       ""         "n"          ""           ""         ""           ""           ""
+Trills                       ""        ""         "r"          ""           ""         ""           ""           ""
+Approximants                 ""        ""         "l"          ""           "j"        "w"          ""           ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Pharyngeal", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* Vowel length is contrastive.
+* Authors seem to vary in terms of the vowel inventory:
+  - (1996) HUME:             /a/ /e/ /i/ /o/ /u/  
+  - (1996) DANIELS & BRIGHT: /a/ /ɛ/ /i/ /o/ /u/  
+  - (1997) BORG:             /a/ /e/ /i/ /o/ /u/  
+  - (2009) HUME ET AL.:      /ɐ/ /ɛ/ /i/ /ɔ/ /u/  
+  - (2016) PUECH:            /a/ /ɛ/ /ɪ/ /ɔ/ /ʊ/
+    * (NB: @MtHume2009 only uses phonetic transcriptions, rather than phonemic, so it is ambiguous whether her choices of vowels reflect phonemes rather than realization.)
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High    "i  iː"       ""         "u  uː"
+""        "ɪː"        ""           ""
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/aj/, /ej/, /oj/, /aw/, /ew/, /iw/, /ow/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                   Comment
+"a"            "/a/"             "some authors use /ɐ/"
+"b"            "/b/"                      ""
+"ċ"            "/tʃ/"                     ""
+"d"            "/d̪/"                      ""
+"e"            "/e/"             "some authors use /ɛ/"
+"f"            "/f/"                      ""
+"ġ"            "/dʒ/"                     ""
+"g"            "/ɡ/"                      ""  
+"h"            "/ː/"         "lengthens associated vowels"  
+"ħ"            "/ħ/"   "realized by some speakers as [x] or [h]"  
+"ie"           "/ɪː/"           "some authors use /ie/"  
+"j"            "/j/"                      ""
+"k"            "/k/"                      ""
+"l"            "/l/"                      ""
+"m"            "/m/"                      ""
+"n"            "/n/"                      ""
+"o"            "/o/"             "some authors use /ɔ/"  
+"p"            "/p/"                      ""
+"q"            "/ʔ/"                      ""
+"r"            "/r/"                      ""
+"s"            "/s/"                      ""
+"t"            "/t̪/"                      ""
+"u"         "/u/, /uː/"          "some authors use /ʊ/"
+"v"            "/v/"                      ""
+"w"            "/w/"                      ""
+"x"            "/ʃ/"         "/ʒ/ appears in certain loanwords"  
+"ż"            "/z/"                      ""
+"z"            "/ts/"       "/dz/ appears in certain loanwords"
+**Digraph**     ""                        ""
+"għ"           "/ː/"         "lengthens associated vowels"
+"i"         "/i/; /iː/"                   ""
+"aj"          "/aj/"                      ""
+"aw"          "/aw/"                      ""
+"ew"          "/ew/"         "occasionally realized as [ow]"  
+"għi"         "/ej/"                      ""
+"għu"         "/ow/"                      ""
+"iw"          "/iw/"                      ""
+"oj"          "/oj/"                      ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Stress
+
+* In words without affixes, Maltese stresses the last VCC or VːC cluster in the word; in words without those clusters, stress falls on the penultimate syllable.
+* In loanwords from English, Maltese typically retains the English stress pattern; in loanwords from Italian, the stress pattern is variable, but most commonly based on the Italian vowel length.
+
+# Lenition Processes
+
+* shortening of word-final long vowels
+  * stiednu - [st̪ɪːd̪nu] - "they invited" vs.  
+    stiednux - [st̪ɪːd̪nuːʃ] - "they did not invite" (Borg, p. 267)
+* devoicing of word-final obstruents (Borg, p. 250)
+  * kiteb - [kit̪ep] - "he has written"
+  * bergħud - [berowt̪] - "flea"
+* <għ> represents the Old Arabic phones [ʕ] or [ɣ], which were deleted at some point during the evolution of modern Maltese (Borg, p. 261)
+* <h> represents the Old Arabic phone [h], which was deleted at some point during the evolution of modern Maltese
+
+# More Rules
+
+* Clusters of obstruents assimilate to be either fully voiced or fully voiceless
+* Short and long vowels are contrastive; likewise short and long consonants
+* Word-final long consonants are sometimes shortened
+* In the definite article, <il->, the /l/ typically assimilates to subsequent coronal segments (except /d͡ʒ/)
+* Metathesis of the definite article occurs before Italian-derived words with initial sibilants
+* The <h> in the suffixed pronouns (<-ha>, <-hom>) is replaced by a glide after stressed stem-final vowels
+* Word-final vowels lengthen; word boundaries shorten them again, but consonantal suffixes retain the long vowel
+* Elision of short vowels occurs in unstressed word-initial syllables
+* /i/ is inserted before word-initial CC clusters beginning with sonorants
+* CCC clusters are pronounced as CVCC when the middle C is a sonorant
+* Glides are inserted between adjacent vowels
+* V[+long]C[+glide] → V[-long]C[+glide]C[+glide]  /  _
+* Syllabic fusion: /'aːo/ → /'oː/
+
+# References

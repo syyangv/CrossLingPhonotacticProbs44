@@ -1,0 +1,91 @@
+---
+title: "Tagalog"
+author: "Abi Creighton"
+edited by: "Emily Strand"
+bibliography: tl.bib
+output: html_document
+---
+
+Last updated: 2019-10-07
+
+# Background
+
+**Language family**: Austronesian / Philippine / Central Philippine / Tagalog
+
+Tagalog borrows extensively from other languages, primarily Spanish. While some of these borrowings are adapted to fit Tagalog orthography, some keep their native spelling and pronunciations and as such are difficult to account for in the rules. The rules focus on the pronunciation of native Tagalog words, not loanwords.
+
+# Phonology
+
+## Consonants
+
+* /f/, /v/, /tʃ/, and /dʒ/ occur in loanwords [@Reid2008, pg. 834, 835].
+
+### By place of articulation
+
+Bilabial: /m/, /p/, /b/, /w/  
+Dental: /n̪/, /t̪/, /d̪/  
+Alveolar: /s/, /l/, /ɾ/  
+Palatal: /j/  
+Velar: /ŋ/, /k/, /g/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Nasal: /m/, /n̪/, /ŋ/  
+Stop: /p/, /b/, /t̪/, /d̪/, /k/, /g/, /ʔ/  
+Fricative: /s/, /h/  
+Approximant: /l/, /j/, /w/  
+Rhotic: /ɾ/  
+
+## Vowels
+
+* Vowel length is phonemic in non-word-final syllables [@bernard_tagalog_1990, pg. 937]; however it is not indicated in the orthography [@Reid2008, pg. 836].
+* Diphthongs occur in vowel-glide sequences if such glides are not intervocalic [@Guevarra, pg. 2].
+
+/i/, /e/, /a/, /o/, /u/
+
+Diphthongs: /ej/, /aj/, /oj/, uj/, /iw/, /aw/  
+
+# Alphabet
+
+* Glottal stops are said to be inconsistently marked [@Cena1990, pg. 2]. @Cena1990 explains that they can be indicated by apostrophes and hyphens (pg. 2).
+* Although /h/ occurs word-finally it is not indicated orthographically [@Carrier1979, pg. 5].
+* ⟨c⟩, ⟨f⟩, ⟨j⟩, ⟨q⟩, ⟨v⟩, ⟨x⟩, and ⟨z⟩ are used in loanwords or in proper names [@Reid2008, 836].
+
+a - /a/  
+b - /b/  
+k - /k/  
+d - /d̪/  
+e - /e/  
+g - /g/  
+h - /h/  
+i - /i/  
+l - /l/  
+m - /m/  
+n - /n̪/  
+o - /o/  
+p - /p/  
+r - /ɾ/  
+s - /s/  
+t - /t̪/  
+u - /u/  
+w - /w/  
+y - /j/  
+(-); ’ - /ʔ/  
+
+## Digraphs
+
+ng - /ŋ/  
+
+
+# Lenition Rules
+
+/k/ > [x]/V_V  
+/g/ > [ɰ]/V_V  
+
+* /d/ is realized as /ɾ/ intervocalically [@ramos_tagalog_1971].
+
+# Misc. Rules
+
+* Vowel-initial words are preceded by a glottal stop [@Cena1990, pg. 2].
+* Glottal stops are often epenthesized intervocalically [@Cena1990, pg. 2].

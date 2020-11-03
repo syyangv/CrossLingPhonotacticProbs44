@@ -1,0 +1,96 @@
+---
+title: "Qeqchi"
+author: "Bill Mizgerd"
+bibliography: kek.bib
+output: html_document
+---
+
+Last Updated: 2019-08-07
+
+# Background
+
+**Language Family**: Mayan / Core Mayan / Quichean-Mamean / Greater Quichean / Qeqchi
+
+The name of the language is spelled in several ways, including Kekchi, K'ekchi', and Q'eqchi'.
+
+# Phonology
+
+## Consonants
+
+* @KekStewart2015 describes the dorsal fricative as both velar (p. 16) and uvular (p. 12) at different points in the document. I have followed the lead of @KekPinkerton1976 in preferring to describe it as velar (p. 10).
+
+### By place of articulation
+
+Labial: /p/, /ɓ/, /m/, /w/  
+Alveolar: /t/, /t’/, /ts/, /ts’/, /n/, /s/, /r/, /l/  
+Postalveolar: /tʃ/, /tʃ’/, /ʃ/  
+Palatal: /j/  
+Velar: /k/, /k’/, /x/  
+Uvular: /q/, /q’/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stops: /p/, /t/, /t’/, /k/, /k’/, /q/, /q’/, /ʔ/  
+Implosives: /ɓ/  
+Affricates: /ts/, /ts’/, /tʃ/, /tʃ’/  
+Nasals: /m/, /n/  
+Fricatives: /s/, /ʃ/, /x/, /h/  
+Trills: /r/  
+Approximants: /w/, /l/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /e/, /ɔ/, /a/  
+
+Vowel length is contrastive in Qeqchi. [@KekStewart2015, p. 12]
+
+# Alphabet
+
+a - /a/  
+b' - /ɓ/  
+ch - /tʃ/  
+  ch' - /tʃ’/  
+e - /e/  
+h - /h/  
+i - /i/  
+j - /x/  
+k - /k/  
+  k' - /k’/  
+l - /l/  
+m - /m/  
+n - /n/  
+o - /ɔ/  
+p - /p/  
+q - /q/  
+  q' - /q’/  
+r - /r/  
+s - /s/  
+t - /t/  
+  t' - /t’/  
+tz - /ts/  
+  tz' - /ts’/  
+u - /u/  
+w - /w/  
+x - /ʃ/  
+y - /j/  
+' - /ʔ/ (<-> is also used for /ʔ/ on occasion)  
+
+Long vowels are written by doubling the vowel character. [@KekStewart2015, p. 12]
+
+/ʔ/ can follow plain stops, which creates a possible ambiguity - is, for example, <t'> representing an ejective consonant or a sequence of a plain stop and a glottal stop? In such cases, I have opted to prefer the ejective-consonant analysis, as it is significantly more common in Qeqchi than the stop/glottal sequence is. [@KekDeChicchis2011, p. 3]
+
+# Lenition Rules
+
+* /h/ voices to [ɦ] intervocalically, and sometimes deletes entirely in non-final postconsonantal positions. [@KekStewart2015, p. 16]
+* /i/ (any length) and /uː/ become the lax [ɪ] and [ʊː] when before /q/. [@KekStewart2015, p. 22]
+
+# Misc. Rules
+
+* Preconsonantal and word-final plain stops (besides /ʔ/) are realized with aspiration. [@KekStewart2015, p. 13]
+* Non-pulmonic consonants are realized as preglottalized when in postvocalic position (e.g. /k’/ → [ʔk’], /ɓ/ - [ʔb’]). [@KekStewart2015, pp. 14-15] [@KekPinkerton1976, p. 12]
+* /n/ assimilates to [ŋ] before dorsal consonants. [@KekStewart2015, p. 17]
+* @KekPinkerton1976 argues that /r/ is typically realized as [ʂ], with voicing and trilling occurring intermittently for some speakers. (p. 16)
+* Glides "obstruentize" word-initially and in postconsonantal syllable-initial positions; this results in what @KekPinkerton1976 describes as [ẘ] and [j̊], but what some other sources describe as [kʷ] and [tʲ] (pp. 17, 26).
+
+# References

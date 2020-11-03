@@ -1,0 +1,141 @@
+---
+title: "Catalan"
+author: "Abi Creighton"
+bibliography: ca.bib
+output: html_document
+---
+#Background
+
+**Language family**: Indo-European / Italic / Romance / Western / Gallo-Romance / Occitano-Romance / Catalan / Central Catalan dialect
+
+* Catalan is predominantly spoken in eastern Spain, in the regions of Catalonia, Valencia, and the Balearic Islands. It is also spoken in parts of France and Italy, as well as in Andorra, which is a principality between France and Spain.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial   Alveolar  Palatal   Velar
+Stops                        "p  b"   "t  d"      ""      "k  g"
+Affricates                     ""    "ts  dz"  "tʃ  dʒ"     ""
+Fricatives                     "f"    "s  z"    "ʃ  ʒ"      ""
+Nasals                         "m"     "n"       "ɲ"        "ŋ"
+Taps                            ""     "ɾ"       ""         ""
+Trills                          ""     "r"       ""         ""
+Approximants                    ""     "l"     "j  ʎ"       "w"
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are unaspirated and those on the right are aspirated; both palatal approximants are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High    "i"       ""      "u"
+Mid     "e"       ""      "o"
+""      "ɛ"       ""      "ɔ"
+Low     ""        "a"     ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* Whether <v> transcribes to /b/ or /v/ is a dialectal difference. I opted for /b/ due to it being more reflective of the standardized language.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme     Phoneme         Comment
+"a"           "/a/"             ""
+"à"           "/a/"             ""
+"b"           "/b/"             ""
+"c"         "/k/; /s/" "/s/: preceding front vowels"
+"ç"           "/s/"             ""
+"d"           "/d/"             ""
+"e"           "/e/"             ""
+"è"           "/ɛ/              ""
+"é"           "/e/              ""
+"f"           "/f/              ""
+"g"          "/g/; /ʒ/" "/g/: preceding front vowels; /ʒ/: preceding back vowels"
+"h"           "∅"               ""
+"i"          "/i/"              ""
+"í"          "/i/"              ""
+"ï"          "/i/"              ""
+"j"          "/ʒ/"              ""
+"k"          "/k/"   "only appears in loanwords"
+"l"          "/l/"              ""
+"m"          "/m/"              ""
+"n"          "/n/"              ""
+"o"          "/ɔ/"              ""
+"ò"          "/ɔ/"              ""
+"ó"          "/o/"              ""
+"p"          "/p/"              ""
+"q"          "/k/"              ""
+"r"          "/ɾ/; /r/"  "/r/: word-initially"
+"s"          "/s/"              ""
+"t"          "/t/"              ""
+"u"          "/u/"              ""
+"ú"          "/u/"              ""
+"ü"          "/u/"              ""
+"v"          "/b/"              ""
+"w"          "/w/"   "only used in loan words"
+"x"          "/ʃ/"              ""
+"y"          "/j/"   "only used in loan words"
+"z"          "/z/"              ""
+**Digraphs**   ""               ""
+"gu"       "/g/; /gw/" "/g/: preceding front vowels; /gw/: preceding back vowels"
+"gü"         "/gw/"   "preceding front vowels"
+"ig"         "/tʃ/"      "syllable-finally"
+"ix"         "/ʃ/"       "syllable-finally"
+"ll"         "/ʎ/"              ""
+"ŀl"         "/lː/"             ""
+"ny"         "/ɲ/"              ""
+"qu"       "/k/; /kw" "/k/: preceding front vowels; /kw/: preceding back vowels"
+"qü"         "/kw/"    "preceding front vowels"
+"rr"         "/r/"              ""
+"ss"         "/s/"              ""
+"tg"         "/dʒ/"    "preceding front vowels"
+"tj"         "/dʒ/"             ""
+"ts"         "/ts/"             ""
+"tz"         "/dz/"             ""
+"tx"         "/tʃ/"             ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+#Rules
+
+/g/ --> [tʃ] / i_
+/l/ --> [ʎ] / l_
+/n/ --> [ɲ] / _ /j/
+
+##Lenition
+
+###Spirantization
+/k/ --> [s] / _V[+front +tense]
+/g/ --> [ʒ]/ _V[+front +tense]
+
+###Deletion
+C[+obstruent α place] --> ∅ / C[α place]_#
+/r/ --> ? / _#
+
+/s/ becomes voiced intervocalically

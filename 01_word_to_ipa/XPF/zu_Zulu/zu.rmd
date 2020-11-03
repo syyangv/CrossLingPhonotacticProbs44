@@ -1,0 +1,112 @@
+---
+title: "Zulu"
+author: "Abi Creighton"
+date: "September 24, 2019"
+bibliography: zu.bib
+output: html_document
+---
+# Background
+
+**Language family**: Niger-Congo / Atlantic-Congo / Benue-Congo / Southern Bantoid / Bantu / Southern Bantu / Nguni / Zunda / Zulu
+
+Zulu is spoken in South Africa.
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /m/, /m̤/, /p'/, /pʰ/, /b̤/, /ɓ/, /f/, /v̤/
+Central dental/alveolar: /|'/, /ǀʰ/, /ᵑǀ/, /ᶢǀʱ/, /ᵑǀʱ/ /n/, /n̤/, /t'/, /tʰ/, /d̤/, /ts'/, /s/, /z̤/, /r/
+Lateral dental/alveolar: /ǁʼ/, /ǁʰ/, /ᵑǁ/, /ᶢǁʱ/, /ᵑǁʱ/, /ɬ/, /ɮ̈/, /l/
+Postalveolar: /!'/, /ǃʰ/, /ᵑǃ/, /ᶢǃʱ/, /ᵑǃʱ/, /ɲ/, /tʃʼ/, /dʒ̈/, /ʃ/, /j/, /j̈/
+Velar: /k'/, /kʰ/, /ɡ̈/, /ɠ/, /kx'/, /w/, /w̤/
+Glottal: /h/, /ɦ̥/
+
+### By manner of articulation
+
+Click: /|ʼ/, /ǀʰ/, /ᵑǀ/, /ᶢǀʱ/, /ᵑǀʱ/, /ǁʼ/, /ǁʰ/, /ᵑǁ/, /ᶢǁʱ/, /ᵑǁʱ/, /!ʼ/, /ǃʰ/, /ᵑǃ/, /ᶢǃʱ/, /ᵑǃʱ/
+Nasal: /m/, /m̥/, /n/, /n̥/, /ɲ/
+Stop: /pʼ/, /pʰ/, /b̥/, /ɓ/, /tʼ/, /tʰ/, /d̥/, /kʼ/, /kʰ/, /g̥/, /ɠ/
+Affricate: /tsʼ/, /tʃʼ/, /dʒ̥/, /kxʼ/
+Fricative: /f/, /v̥/, /s/, /z̥/, /ɬ/, /ɮ̥/, /ʃ/, /h/, /ɦ̥/
+Approximent: /l/, /j/, /j̥/, /w/, /w̥/
+Trill: /r/  
+
+
+### Click Consonants
+
+Zulu has three basic articulations of clicks:
+
+  -Denti-alveolar /ǀ/, made by sucking on the front teeth
+  -Alveolar /!/, made by pulling the tip of the tongue from the roof of the mouth
+  -Lateral /ǁ/, made by sucking on the molars
+
+The three basic articulations cover five click consonants. The five click consonants are listed below with denti-alveolar articulation:
+
+  -Plain: /ǀʼ/
+  -Aspirated: /ǀʰ/
+  -Nasalized: /ᵑǀ/
+  -Slack-voiced oral: /ᶢǀʱ/
+  -Slack-voiced nasal: /ᵑǀʱ/
+
+## Vowels
+
+* Tone is phonemic in Zulu; however, it is not orthographically marked.
+
+/i/, /u/, /e/, /o/, /a/
+
+# Alphabet
+
+a - /a/
+b - /ɓ/
+c - /ǀ/
+d - /d̥/
+e - /e/
+f - /f/
+g - /g/
+h - /h/
+i - /i/
+j - /dʒ̥/
+k - /k/ or /ɠ/
+l - /l/
+m - /m/
+n - /n/
+o - /o/
+p - /pʼ/
+q - /ǃ/
+r - /r/ (only in loanwords)
+s - /s/
+t - /tʼ/
+u - /u/
+v - /v̥/
+w - /w/
+x - /ǁ/
+y - /j/
+z - /z̥/
+
+## Multigraphs
+
+bh - /b̥/
+gh - /g̥/
+tsh - /tʃʼ/
+kh - /kʰ/
+kl - /kxʼ/
+hl - /ɬ/
+dl - /ɮ̥/
+ny - /ɲ/
+ph - /pʰ/
+sh - /ʃ/
+th - /tʰ/
+hh - /ɦ̥/
+
+
+# Lenition Rules
+
+* Labial and alveolar consonants are palatalized when followed by /j/. This may result in spirantization, particularly of aspirated /pʰ/ and /tʰ/.
+
+# Misc. Rules
+
+* /e/ and /o/ are pronounced [e] and [o], respectively, if the following syllable contains an "i" or a "u" or if the vowel is word-final. Otherwise they are [ɛ] and [ɔ].
+* n is velarized before clicks

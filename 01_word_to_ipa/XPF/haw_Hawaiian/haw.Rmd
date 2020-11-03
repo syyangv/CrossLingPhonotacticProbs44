@@ -1,0 +1,93 @@
+---
+title: "Hawaiian"
+author: "Justin Bai"
+bibliography: haw.bib
+output: html_document
+---
+
+Last updated: 2019-10-17
+
+# Background
+
+**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central Pacific linkage / Tokelau-Fijian / Polynesian / Nuclear / East / Central / Marquesic
+
+* Hawaiian is spoken throughout the Hawaiian Islands, located in the Pacific Ocean.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar   Velar   Glottal
+Stops                       "p"        ""       "k"       "ʔ"
+Fricatives                  "v"        ""       ""        "h"
+Nasals                      "m"        "n"      ""        ""
+Liquids                     ""         "l"      ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is contrastive in Hawaiian [@elbert1986hawaiian, p. 14]. Long vowels are indicated with a macron ⟨¯⟩.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"e"            "/e/"
+"h"            "/h/"
+"i"            "/i/"
+"k"            "/k/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"u"            "/u/"
+"w"            "/v/"
+"ʻ"            "/ʔ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /h/ deletes intervocalically [@Lavoie1996, p. 287].
+* In a few instances /k/ may debuccalize to /ʔ/ [@elbert1986hawaiian, p. 12].
+
+# Misc. Rules
+
+* /k/ varies freely with /t/ [@jones2018hawaiian, pp. 105-106]. Because most sources don't indicate /t/ as being part of the phonemic inventory, I have chosen to transcribe ⟨k⟩ as /k/. Similarly, /p/ varies freely with [b], /w/ with [v], and /l/ with [d] and [r].
+
+# References

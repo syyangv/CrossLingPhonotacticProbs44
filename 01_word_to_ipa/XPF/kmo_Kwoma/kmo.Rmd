@@ -1,0 +1,112 @@
+---
+title: "Kwoma"
+author: "Bill Mizgerd"
+bibliography: kmo.bib
+output: html_document
+---
+
+Last Updated: 2019-07-24
+
+# Background
+
+**Language Family**: Sepik / Middle Sepik / Nukuma / Kwoma
+
+* Also referred to as Washkuk, Kwoma is spoken in 12 villages within the East Sepik province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar    Postalveolar     Palatal     Velar     Glottal
+Stops                       "ᵐb"      "t  ⁿd"         ""             ""       "k  ᵑɡ"      "ʔ"
+Affricates                  ""           ""        "tʃ  ⁿdʒ"         ""         ""         ""
+Fricatives                 "ɸ  β"       "s"           "ʃ"            ""         ""         "h"
+Nasals                      "m"         "n"           ""             "ɲ"        ""         ""
+Flaps                       ""          "ɾ"           ""             ""         ""         ""
+Approximants                "w"         ""            ""             "j"        ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes that contain a diacritic /ᵐ/, /ⁿ/, or /ᵑ/ are prenasalized.", general_title = "")
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         "ɨ"         "u"
+Mid       "e"         ""          "o"
+""        "ɛ"         ""          ""
+Low       ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"            "/a/"
+"b"            "/ᵐb/"    
+"d"            "/ⁿd/"  
+"e"            "/e/"  
+"g"            "/ᵑɡ/"  
+"h"            "/h/"  
+"i"            "/i/"  
+"j"            "/ⁿdʒ/"  
+"k"            "/k/"  
+"m"            "/m/"  
+"n"            "/n/"   
+"o"            "/o/"  
+"p"            "/ɸ/"  
+"r"            "/ɾ/"  
+"s"            "/s/"    
+"t"            "/t/"  
+"u"            "/u/"  
+"v"            "/β/"  
+"w"            "/w/"  
+"y"            "/j/"  
+"\'"            "/ʔ/"  
+**Digraph**     ""
+"ch"           "/tʃ/"
+"ny"           "/ɲ/"
+"sh"           "/ʃ/"
+"ay"           "/ai/"  
+"ee"           "/ɛ/"  
+"ey"           "/ei/"  
+"ii"           "/ɨ/"  
+"iy"           "/i/"  
+"ow"           "/ou/"  
+"uw"           "/u/"  
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* The suffix /-ta/ spirantizes to /-tʃa/ after certain morphemes [@KmoKooyers1974, p. 9].
+* The suffix /-tawa/ collapses to one of four shortened versions, depending on preceding morphemes [@KmoKooyers1974, p. 10].
+* Monosyllabic /a/-final verb stems raise to [ɛ] before the suffix /-tʃi/ (ibid.).
+* The imperative marker /na/ raises to [ne] before /i/ (ibid.).
+
+# References

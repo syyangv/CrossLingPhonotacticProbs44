@@ -1,0 +1,148 @@
+---
+title: "Malayalam"
+author: "Becky Mathew"
+bibliography: ml.bib
+output: html_document
+---
+
+# Background
+
+**Language family**: Dravidian, Southern, Tamil-Kannada, Tamil-Kodagu, Tamil-Malayalam, Malayalam
+
+* Malayalam, the official language of Kerala and Lakshadweep, is a Dravidian language from South India. It is also heavily influenced by Sanskrit, and in the modern day, has become influenced by English (introduction of /f/).
+* It is spoken in the states of Karnataka, Kerala, Lakshadweep, Puducherry, and Tamil Nadu located in Southern India.
+
+# Phonology
+
+## Consonants
+
+* Stops have a four-way contrast (voiceless unaspirated, voiceless aspirated, voiced unaspirated, voiced aspirated) [@TEMU].
+* Consonant length is contrastive [@Jiang2010].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"       Labial        Dental     Alveolar    Retroflex   Postalveolar   Palatal       Velar       Glottal
+"Stops (plain)"                  "p  b"        "t̪  d̪"        ""        "ʈ  ɖ"         ""          "ɟ"         "k  ɡ"         ""
+"Stops (asp.)"                  "pʰ  bʱ"      "t̪ʰ  d̪ʱ"       ""        "ʈʰ  ɖʱ"       ""          "ɟʱ"        "kʰ  ɡʱ"       ""
+Affricates                       ""            ""          ""           ""        "tʃ tʃʰ"       ""            ""          ""
+Fricatives                       "ʋ"           ""          "s"          "ʂ"         "ʃ"          ""            ""          "h"
+Nasals                           "m"           "n̪"         "n"          "ɳ"         ""           "ɲ"           "ŋ"         ""
+Flaps                            ""            ""          "ɾ"          ""          ""           ""            ""          ""
+Trills                           ""            ""         "r̥  r"        ""          ""           ""            ""          ""
+Approximants                     ""            ""         "l̥  l"      "ɻ  ɭ"        ""           "j"           ""          ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Retroflex", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both retroflex approximants are voiced, but the one on the right is lateral.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive. The diphthongs do not have a length contrast [@Mohanan1986].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /au"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```   
+
+## Alphabet
+
+* Malayalam is written left to right, and does not contain uppercase/lowercase distinctions.
+* A consonant letter carries an inherent /a/ or schwa after it, unless indicated by a diacritic.
+* Sometimes letters will combine with other letters or diacritics to form a single shape, but they are usually written separately.
+
+Initial vowels and diacritics  
+* /a/ = അ  
+* /a ː/ = ആ, ാ  
+* /i/ = ഇ, ി  
+* /i ː/ = ഈ, ീ  
+* /e/ = എ,  െ  
+* /e ː/ = ഏ, േ  
+* /u/ = ഉ, ു  
+* /u ː/ = ഊ, ൂ  
+* /ai/ = ഐ, ൃ  
+* /o/ = ഒ, ൊ  
+* /o ː/ = ഓ,ോ  
+* /au/ = ഔ, ൌ, ൗ    
+* /r̥ i/ = ഋ  
+* /r̥ i ː/ = ൠ  
+* /l̥ i/ = ഌ, ൢ  
+* /l̥ i ː/ = ൡ, ൣ  
+* /∅/ = ് (this letter is called a virama, and itremoves the vowel before)  
+
+Consonants with an inherent /a/ following
+* /k a/ = ക  
+* /kʰ a/ = ഖ  
+* /g a/ = ഗ  
+* /gʱ a/ = ഘ  
+* /ŋ a/ = ങ  
+* /tʃ a/ = ച  
+* /tʃʰ a/ = ഛ  
+* /ɟ a/ = ജ  
+* /ɟʱ a/ = ഝ  
+* /ɲ a/ = ഞ  
+* /ʈ a/ = ട  
+* /ʈʰ a/ = ഠ  
+* /ɖ a/ = ഡ  
+* /ɖʱ a/ = ഢ  
+* /ɳ a/ = ണ  
+* /t̪ a/ = ത  
+* /t̪ʰ a/ = ഥ  
+* /d̪ a/ = ദ  
+* /d̪ʱ a/ = ധ  
+* /n̪ a/ = ന  
+* /n a/ = ഩ  
+* /p a/ = പ  
+* /pʰ a/ = ഫ  
+* /b a/ = ബ  
+* /bʱ a/ = ഭ  
+* /m a/ = മ  
+* /j a/ = യ  
+* /ɾ a/ = ര  
+* /r a/ = റ  
+* /l a/ = ല  
+* /ɭ a/ = ള  
+* /ɻ a/ = ഴ  
+* /ʋ a/ = വ  
+* /ʃ a/ = ശ  
+* /ʂ a/ = ഷ  
+* /s a/ = സ  
+* /h a/ = ഹ  
+
+Consonants without an inherent vowel following
+These kinds of consonants are called chillu or chilluksharam
+* /m/ = ം (this letter is called a anusvaram)  
+* /h/ = ഃ (this letter is called a visarga)  
+* /ɳ/ = ൺ  
+* /n̪/ = ൻ  
+* /r/ = ർ  
+* /l/ = ൽ  
+* /ɭ/ = ൾ  
+* /k/ = ൿ  

@@ -1,0 +1,131 @@
+---
+title: "Greek"
+author: "Shiying Yang"
+bibliography: el.bib
+output: html_document
+---
+
+Last-updated: 2019-04-29
+
+# Background
+
+**Language family**: Indo-European / Hellenic/ Greek
+
+* The adopted variety is Standard Modern Greek.
+* Speakers reside in a multitude of places, including Albania, Macedonia, Montenegro, Cyprus, Greece, and Ukraine.
+
+# Phonology
+
+## Consonants
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial   Dental    Alveolar   Velar
+Stops                       "p  b"   "t̪  d̪"       ""      "k  ɡ"
+Fricatives                  "f  v"   "θ  ð"     "s  z"    "x  ɣ"
+Nasals                        "m"      "n̪"        ""        ""
+Flaps                         ""       ""         "ɾ"       ""
+Approximants                  ""       ""         "l"       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Mid    "ε"     ""        "o"
+Low    ""      "ɐ"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+"Uppercase"  "Lowercase"    ""
+Α,α,ά  
+Β,β  
+Γ,γ   
+Δ,δ  
+Ε,ε,Έ,έ    
+Ζ,ζ  
+Η,η,Ή,ή  
+Θ,θ  
+Ι,ι,Ί,ί,Ϊ,ϊ,Ḯ,ΐ  
+Κ,κ  
+Λ,λ   
+Μ,μ  
+Ν,ν  
+Ξ,ξ  
+Ο,ο,Ό,ό  
+Π,π  
+Σ,ς/σ  
+Τ,τ  
+Υ,υ,Ύ,ύ,Ϋ,ϋ,Ϋ́,ΰ      
+Φ,φ  
+Χ,χ  
+Ψ,ψ  
+Ω,ω,Ώ,ώ
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("Grapheme" = 2, "Phoneme" = 1))
+```  
+
+## Correspondence between orthography and phonemes
+* Most consonant mappings are shown in table \ref{tab:el_con}, here are mappings for vowels, as well as consonant combinations that do not correspond to single phonemes.
+* Stressed vowels (shown by stress markings as seen in ά,έ,ή,ί,ό,ύ,ώ) are represented as the ipa symbol followed by a "1". e.g. /i1/  
+
+|orthography|pronunciation|
+|-----------|-------------|
+|ξ|/ks/|
+|ψ|/ps/|
+|α|/ɐ/|
+|ά|/ɐ1/|
+|ω/ο|/o/|
+|ώ/ό|/o1/|
+|ι/ϊ/η/υ/ϋ/οι/ει|/i/|
+|ί/ΐ/ή/ύ/ΰ/οί/εί|/i1/
+|ε/αι|/ε/|
+|έ/αί|/ε1/|
+|ου|/u/|
+|ού|/u1/|
+|αυ|/ɐf/|
+|αύ|/ɐ1f/|
+|ευ|/εv/|
+|εύ|/ε1v/|
+
+# Rules
+
+## Issues and representative phonological processes
+1. All but two diacritics are kept in the Standard Modern Greek
+- stress marking
+- umlaut
+2. Palatalization of velar consonants
+- Velar consonants /k/, /g/, /x/, /ɣ/ surface as palatal allophones [c], [ɟ], [ç], [ʝ] in front of high vowels /i/ and /ε/
+- [+velar, +consonantal] -> [+palatal]/__[+high, -consonantal]{\$ or [-back, -consonantal]}
+- [+velar, +consonantal][+high, -consonantal] -> [+palatal]/__[+back, -consonantal]
+
+## Lenition Processes
+
+# References {-}
