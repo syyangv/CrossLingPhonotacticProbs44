@@ -41,7 +41,7 @@ words_new <- words_retain %>% group_by(ipa) %>%
          ipa = str_replace_all(ipa, '[0-9]', ''))
 
 # mark all vowels ----
-all_vowels_ipa <- 'i,y,ɨ,ʉ,ɯ,u,ɪ,ʏ,ʊ,e,ø,ɘ,ɵ,ɤ,o,o̞,ɛ,œ,ɜ,ɞ,ʌ,ɔ,æ,ɐ,a,ɶ,ɑ,ɒ,ɔ̃,ɑ̃,ə,ɚ,ɪ̈,ɝ,ɛ̃'
+all_vowels_ipa <- 'i,y,ɨ,ʉ,ɯ,u,ɪ,ʏ,ʊ,e,ø,ɘ,ɵ,ɤ,o,o̞,ɛ,œ,ɜ,ɞ,ʌ,ɔ,æ,ɐ,a,ɶ,ɑ,ɒ,ɔ̃,ɑ̃,ə,ɚ,ɪ̈,ɝ,ɛ̃,ӑ,ӗ'
 all_vowels_match <- str_replace_all(all_vowels_ipa, ',', '|')
 all_unstressed_vowels_match <- paste0('(', all_vowels_match, ')(ː?)( |$)')
 
